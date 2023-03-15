@@ -25,8 +25,8 @@
   <button class="btn btn-secondary dropdown-toggle filterButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter <i class="bi bi-filter-right"></i>
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item"  (click)="filterPeopleByAge('Fruit')" >Fruits</a></li>
-    <li><a class="dropdown-item"  (click)="filterPeopleByAge('vegetable')" >Vegetable</a></li>
+    <li><a class="dropdown-item"  (click)="forFilter('Fruit')" >Fruits</a></li>
+    <li><a class="dropdown-item"  (click)="forFilter('vagetable')" >Vegetable</a></li>
   </ul>
 </div>
 
@@ -83,5 +83,5 @@
 
 
 <ul>
-<li *ngFor="let cat of filteredPeople">{{ cat.cat_name }}</li>
+<li *ngFor="let cat of  filter">{{ cat.name }}</li>
 </ul>
