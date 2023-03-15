@@ -5,79 +5,37 @@ footer{
 .footer_blocks {
 display: flex;
 background-color: rgb(215, 140, 140);
+height: 400px;
 
 }
 
-.footer_about {
-width: 30%;
-margin: 2.5%;
-list-style-type:none;
-
-
-
-}
-.footer_about:hover {
-background-color: transparent;
+.logo{
+    height: 70px;
+    float: left;
+    margin-left: 490px;
+    float: left;
 }
 
-.footer_categories {
-width: 15%;
-margin: 2.5%;
-list-style-type:none;
+.left{
+    margin-left: -60px;
 }
 
-.footer_categories:hover {
-background-color: transparent;
+p{
+    margin: 1px;
 }
 
-.footer_informations {
-width: 15%;
-margin: 2.5%;
-list-style-type:none;
-}
-
-.footer_informations:hover {
-background-color: transparent;
-}
-
-.footer_contact {
-width: 20%;
-margin: 2.5%;
-list-style-type:none;
-}
-
-.footer_contact:hover {
-background-color: transparent;
-}
-
-.contact_address_footer {
-font-style: normal;
-}
-
-.block_labels {
-font-size: 1.5vw;
-margin: 2.5%;
+.p1{
+    font-size: 30px;
+    color: rgb(21, 154, 92);
+    text-align: center;
 
 }
+.p2{
+    color: rgb(143, 135, 135);
+    text-align: center;
 
-.about_block {
-width:350px;
 }
-
-.contact_address_footer {
-font-size: 1.2vw;
-}
-
-.footer_informations ul li,
-.footer_categories ul li {
-margin-bottom: 5%;
-list-style-type:none;
-}
-
-.list_categories {
-text-decoration: none;
-font-style: none;
-color: black;
-font-size: 1.2vw;
-margin-bottom: 5%;
+.main{
+    margin-top: 200px;
+    margin-left: -900px;
 }

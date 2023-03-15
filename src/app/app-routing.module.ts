@@ -3,24 +3,30 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
   {
     path:'',
-  loadChildren:()=>import("./front/catlog/catlog.module").then((l)=>l.CatlogModule)
+  loadChildren:()=>import("./front/front.module").then((l)=>l.FrontModule)
     
   },
+
+  {
+    path:'front',
+    loadChildren:()=>import("./front/front.module").then((l)=>l.FrontModule)
+    
+
+  },
+
+  
 
 {
   path:'about-us',
   component:AboutUsComponent
 },
 
-{
-  path:'user',
-  loadChildren:()=>import("./front/user/user.module").then((l)=>l.UserModule)
-},
 
 {
 path:'contact-us',
@@ -30,6 +36,12 @@ component:ContactUsComponent
 {
   path:'cart',
   component:CartComponent
+  },
+
+
+{
+  path:'**',
+  component:PageNotFoundComponent
   }
 
 ];
