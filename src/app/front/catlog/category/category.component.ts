@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './category.component.html',
   styleUrls: ['./category.component.scss']
 })
-export class CategoryComponent {
-  [x: string]: any;
+export class CategoryComponent {[x: string]: any;
 
   catArray:any=[
   
